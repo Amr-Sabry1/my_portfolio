@@ -1,0 +1,512 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav .container {
+    padding: 10px 20px;
+    width: 75%;
+    margin: auto;
+    background-color: #000;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #e6ff00;
+}
+
+body {
+    color: white;
+    background-image: url(../images/images1\ \(1\).jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contain {
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.566);
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .contain {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.imgMe {
+    width: 80%;
+    border-radius: 5px;
+    border-bottom-left-radius: 150px;
+    border-top-right-radius: 150px;
+    margin-left: 40px;
+}
+
+.home h3::after {
+    color: brown;
+    content: "|";
+    animation: 13s typing infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+    1% {
+        content: "D|";
+    }
+    2% {
+        content: "De|";
+    }
+    3% {
+        content: "Dev|";
+    }
+    4% {
+        content: "Deve|";
+    }
+    5% {
+        content: "Devel|";
+    }
+    6% {
+        content: "Develo|";
+    }
+    7% {
+        content: "Develop|";
+    }
+    8% {
+        content: "Developer|";
+    }
+    9% {
+        content: "Developer|";
+    }
+    10% {
+        content: "Developer|";
+    }
+    11% {
+        content: "Developer|";
+    }
+    12% {
+        content: "Develope|";
+    }
+    13% {
+        content: "Develop|";
+    }
+    14% {
+        content: "Develo|";
+    }
+    15% {
+        content: "Devel|";
+    }
+    16% {
+        content: "Deve|";
+    }
+    17% {
+        content: "Deve|";
+    }
+    18% {
+        content: "Dev|";
+    }
+    19% {
+        content: "De|";
+    }
+    20% {
+        content: "D|";
+    }
+    21% {
+        content: "|";
+    }
+    22% {
+        content: "|";
+    }
+    23% {
+        content: "|";
+    }
+    24% {
+        content: "|";
+    }
+    25% {
+        content: "|";
+    }
+    26% {
+        content: "F|";
+    }
+    27% {
+        content: "Fr|";
+    }
+    28% {
+        content: "Fre|";
+    }
+    29% {
+        content: "Free|";
+    }
+    30% {
+        content: "Freel|";
+    }
+    31% {
+        content: "Freela|";
+    }
+    32% {
+        content: "Freelan|";
+    }
+    33% {
+        content: "Freelanc|";
+    }
+    34% {
+        content: "Freelance|";
+    }
+    35% {
+        content: "Freelancer|";
+    }
+    36% {
+        content: "Freelance|";
+    }
+    37% {
+        content: "Freelanc|";
+    }
+    38% {
+        content: "Freelan|";
+    }
+    39% {
+        content: "Freela|";
+    }
+    40% {
+        content: "Freel|";
+    }
+    41% {
+        content: "Free|";
+    }
+    42% {
+        content: "Fre|";
+    }
+    43% {
+        content: "Fr|";
+    }
+    44% {
+        content: "F|";
+    }
+    45% {
+        content: "|";
+    }
+    46% {
+        content: "p|";
+    }
+    47% {
+        content: "ph|";
+    }
+    48% {
+        content: "pho|";
+    }
+    49% {
+        content: "phot|";
+    }
+    50% {
+        content: "photo|";
+    }
+    51% {
+        content: "photog|";
+    }
+    52% {
+        content: "photogr|";
+    }
+    53% {
+        content: "photogra|";
+    }
+    54% {
+        content: "photograp|";
+    }
+    55% {
+        content: "photograph|";
+    }
+    56% {
+        content: "photographe|";
+    }
+    57% {
+        content: "photographer|";
+    }
+    58% {
+        content: "photographe|";
+    }
+    59% {
+        content: "photograph|";
+    }
+    70% {
+        content: "photograp|";
+    }
+    71% {
+        content: "photogra|";
+    }
+    72% {
+        content: "photogr|";
+    }
+    73% {
+        content: "photog|";
+    }
+    74% {
+        content: "photo|";
+    }
+    75% {
+        content: "phot|";
+    }
+    76% {
+        content: "pho|";
+    }
+    77% {
+        content: "ph|";
+    }
+    78% {
+        content: "p|";
+    }
+    79% {
+        content: "|";
+    }
+    80% {
+        content: "D|";
+    }
+    81% {
+        content: "De|";
+    }
+    82% {
+        content: "Des|";
+    }
+    83% {
+        content: "Desi|";
+    }
+    84% {
+        content: "Desig|";
+    }
+    85% {
+        content: "Design|";
+    }
+    86% {
+        content: "Designe|";
+    }
+    87% {
+        content: "Designer|";
+    }
+    88% {
+        content: "Designer|";
+    }
+    89% {
+        content: "Designe|";
+    }
+    90% {
+        content: "Design|";
+    }
+    91% {
+        content: "Desig|";
+    }
+    92% {
+        content: "Desi|";
+    }
+    93% {
+        content: "Des|";
+    }
+    94% {
+        content: "De|";
+    }
+    95% {
+        content: "D|";
+    }
+    96% {
+        content: "|";
+    }
+}
+
+span {
+    color: #e6ff00;
+}
+
+.contain h2::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #e6ff00;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#skills .fa-brands {
+    font-size: 50px;
+}
+
+.skill {
+    border: 2px solid rgba(255, 0, 0, 0.385);
+    color: #e6ff00;
+    transition: .4s all;
+}
+
+.skill:hover {
+    background-color: #ff01018b;
+}
+
+h5 {
+    color: white;
+    font-weight: 700;
+}
+
+button {
+    transition: .4s all !important;
+}
+
+button:hover {
+    background-color: transparent !important;
+    border: 1px solid rgba(226, 6, 6, 0.762) !important;
+    color: aliceblue !important;
+}
+
+.ineer {
+    text-align: center;
+    position: relative;
+    margin: 10px 10px 20px;
+}
+
+.ineer a {
+    display: none;
+    width: 25%;
+    margin: auto;
+    letter-spacing: 1px;
+    font-size: 14px;
+    position: relative;
+    top: 48%;
+    transform: translateY(-15px);
+    transition: .4s all;
+    text-decoration: none;
+    background-color: brown;
+    padding: 4px;
+    border-radius: 8px;
+    color: white;
+}
+
+.ineer a:hover {
+    background-color: white;
+    color: #000;
+    border: 1px solid red;
+}
+
+.porto-slide h6 {
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: transparent;
+    position: relative;
+    top: 40%;
+    transform: translateY(-15px);
+    transition: .7s all;
+}
+
+.porto-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 10px);
+    background-color: transparent;
+    transition: .5s all;
+}
+
+.porto-slide:hover {
+    border: 2px solid transparent;
+    transform: translate(0, 0);
+    background-color: #ddf312df;
+}
+
+.porto-slide:hover h6 {
+    transform: translateY(0px);
+    color: #000;
+    display: block;
+}
+
+.porto-slide:hover a {
+    display: block;
+}
+
+.form-control {
+    background-color: rgba(225, 215, 215, 0.421);
+    color: rgba(255, 255, 255, 0.558);
+}
+
+.form-control:hover {
+    box-shadow: 1px 1px 15px red;
+}
+
+#contact .icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(77, 89, 80, 0.303);
+    padding: 10px;
+    border-radius: 50%;
+    transition: .5s all;
+}
+
+.icon a {
+    text-decoration: none;
+    color: #fff;
+    transition: .5s all;
+}
+
+#contact .icon:hover {
+    color: black;
+    background-color: #e6ff00;
+}
+
+#contact .icon:hover a {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@keyframes moveleft {
+    0% {
+        transform: translate(50%);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+
+@keyframes moveright {
+    0% {
+        transform: translate(-50%);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+
+.moveleft {
+    animation: moveleft 3s;
+}
+
+.moveright {
+    animation: moveright 3s;
+}
+
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 50%;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e6ff00;
+    border-radius: 10px;
+    transition: .5s all;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: aqua;
+}
