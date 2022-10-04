@@ -510,3 +510,17 @@ ul {
 ::-webkit-scrollbar-thumb:hover {
     background: aqua;
 }
+
+.iconarrow i {
+    color: #000;
+    background-color: #c9df00;
+    border-radius: 50%;
+    position: fixed;
+    width: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px 0px 0 1px;
+    bottom: 50px;
+    right: 25px;
+    height: 40px;
+}
