@@ -34,7 +34,7 @@ body {
 }
 
 .logo {
-    width: 10%;
+    width: 12%;
 }
 
 @media screen and (max-width: 768px) {
@@ -44,7 +44,7 @@ body {
         padding-right: 10px;
     }
     .logo {
-        width: 35% !important;
+        width: 25% !important;
     }
 }
 
