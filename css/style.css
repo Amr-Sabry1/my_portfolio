@@ -370,6 +370,7 @@ button:hover {
 }
 
 .ineer {
+    overflow: hidden;
     text-align: center;
     position: relative;
     margin: 10px 10px 20px;
