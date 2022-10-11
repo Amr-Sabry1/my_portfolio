@@ -532,3 +532,15 @@ ul {
     right: 25px;
     height: 40px;
 }
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.551) !important;
+}
+
+:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.551) !important;
+}
+
+::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.551) !important;
+}
