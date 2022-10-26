@@ -10,7 +10,7 @@ nav .container {
     padding: 10px 20px;
     width: 75%;
     margin: auto;
-    background-color: #000;
+    transition: all 1s;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
@@ -18,6 +18,7 @@ nav .container {
 }
 
 body {
+    overflow: hidden;
     color: white;
     background-image: url(../images/images1\ \(1\).jpg);
     background-attachment: fixed;
@@ -521,6 +522,7 @@ ul {
 
 .iconarrow i {
     color: #000;
+    display: none;
     background-color: #c9df00;
     border-radius: 50%;
     position: fixed;
@@ -543,4 +545,74 @@ ul {
 
 ::-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.551) !important;
+}
+
+.spiner {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF rgb(255, 255, 255) transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #c9df00 #c9df00;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+}
+
+.loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
 }
