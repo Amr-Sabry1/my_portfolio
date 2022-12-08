@@ -26,6 +26,10 @@ body {
     background-size: cover;
 }
 
+a {
+    text-decoration: none;
+}
+
 .contain {
     overflow: hidden;
     width: 90%;
