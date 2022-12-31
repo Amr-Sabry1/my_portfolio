@@ -11,7 +11,7 @@ let aboutSection = $("#about").offset().top
 $(window).scroll(function() {
     let windowScroll = $(window).scrollTop();
 
-    if (windowScroll > aboutSection - 50) {
+    if (windowScroll > aboutSection + -300) {
         $('nav .container').css("background-color", "black")
         $('nav .container').css({ "padding-left": "40px", "padding-right": "40px" })
         $(".iconarrow i").fadeIn(500)

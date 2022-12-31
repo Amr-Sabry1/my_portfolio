@@ -54,11 +54,13 @@ a {
 }
 
 .imgMe {
-    width: 80%;
+    width: 65%;
     border-radius: 5px;
-    border-bottom-left-radius: 150px;
-    border-top-right-radius: 150px;
-    margin-left: 40px;
+    border-top: 4px solid #c9df00;
+    border-bottom: 4px solid #c9df00;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin: auto;
 }
 
 .home h3::after {
@@ -355,10 +357,6 @@ span {
     transition: .4s all;
 }
 
-.skill:hover {
-    background-color: #ff01018b;
-}
-
 h5 {
     color: white;
     font-weight: 700;
@@ -414,6 +412,10 @@ button:hover {
     transition: .7s all;
 }
 
+.ineer img {
+    border-radius: 10px;
+}
+
 .porto-slide {
     position: absolute;
     width: 100%;
@@ -426,7 +428,8 @@ button:hover {
 .porto-slide:hover {
     border: 2px solid transparent;
     transform: translate(0, 0);
-    background-color: #ddf312df;
+    background-color: #c7d453df;
+    border-radius: 10px;
 }
 
 .porto-slide:hover h6 {
@@ -448,7 +451,7 @@ button:hover {
     box-shadow: 1px 1px 15px red;
 }
 
-#contact .icon {
+#about .icon {
     width: 40px;
     height: 40px;
     background-color: rgba(77, 89, 80, 0.303);
@@ -463,12 +466,12 @@ button:hover {
     transition: .5s all;
 }
 
-#contact .icon:hover {
+#about .icon:hover {
     color: black;
     background-color: #e6ff00;
 }
 
-#contact .icon:hover a {
+#about .icon:hover a {
     color: black;
 }
 
