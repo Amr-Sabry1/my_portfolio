@@ -6,21 +6,32 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --white-clr: rgb(255, 255, 255);
+    --main-clr: rgb(213, 255, 5);
+}
+
+h2 {
+    color: var(--white-clr) !important;
+}
+
 nav .container {
-    padding: 10px 20px;
+    /* background-color: rgb(0, 0, 0) !important; */
+    padding: 4px 20px;
     width: 75%;
     margin: auto;
     transition: all 1s;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: #e6ff00;
+    color: var(--main-clr);
 }
 
 body {
     overflow: hidden;
-    color: white;
-    background-image: url(https://cdn.wallpapersafari.com/91/20/Lyfnci.jpg);
+    color: rgb(0, 0, 0);
+    background-color: rgb(39, 39, 74);
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0d227e61-fdb7-4a13-b06e-f70dc6007809/dfveey4-e79da916-55d5-4acf-9480-c602244bb3f5.png/v1/fill/w_1600,h_900,q_80,strp/fantasy_wallpaper_03_by_stormbackstrom_dfveey4-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBkMjI3ZTYxLWZkYjctNGExMy1iMDZlLWY3MGRjNjAwNzgwOVwvZGZ2ZWV5NC1lNzlkYTkxNi01NWQ1LTRhY2YtOTQ4MC1jNjAyMjQ0YmIzZjUucG5nIiwiaGVpZ2h0IjoiPD05MDAiLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8wZDIyN2U2MS1mZGI3LTRhMTMtYjA2ZS1mNzBkYzYwMDc4MDlcL3N0b3JtYmFja3N0cm9tLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.SqatDgLEeYkK4bVWA14Yqd6egXJr1_idR7u18b3beZk);
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -30,12 +41,16 @@ a {
     text-decoration: none;
 }
 
+section {
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
 .contain {
     overflow: hidden;
-    width: 90%;
+    width: 80%;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.566);
-    color: white;
+    /* background-color: rgba(8, 12, 7, 0.601); */
+    color: var(--white-clr);
 }
 
 .logo {
@@ -54,12 +69,12 @@ a {
 }
 
 .imgMe {
-    width: 65%;
+    width: 70%;
     border-radius: 5px;
-    border-top: 4px solid #c9df00;
-    border-bottom: 4px solid #c9df00;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top: 4px solid var(--main-clr);
+    border-bottom: 4px solid var(--main-clr);
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 5px;
     margin: auto;
 }
 
@@ -334,14 +349,14 @@ a {
 }
 
 span {
-    color: #e6ff00;
+    color: var(--main-clr);
 }
 
 .contain h2::after {
     content: "";
     width: 80px;
     height: 3px;
-    background-color: #e6ff00;
+    background-color: var(--main-clr);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -353,12 +368,12 @@ span {
 
 .skill {
     border: 2px solid rgba(255, 0, 0, 0.385);
-    color: #e6ff00;
+    color: var(--main-clr);
     transition: .4s all;
 }
 
 h5 {
-    color: white;
+    color: var(--white-clr);
     font-weight: 700;
 }
 
@@ -369,7 +384,7 @@ button {
 button:hover {
     background-color: transparent !important;
     border: 1px solid rgba(226, 6, 6, 0.762) !important;
-    color: aliceblue !important;
+    color: var(--white-clr) !important;
 }
 
 .ineer {
@@ -390,16 +405,16 @@ button:hover {
     transform: translateY(-15px);
     transition: .4s all;
     text-decoration: none;
-    background-color: brown;
+    background-color: rgb(47, 211, 211);
     padding: 4px;
+    border: 1px solid rgb(0, 238, 255);
     border-radius: 8px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .ineer a:hover {
     background-color: white;
-    color: #000;
-    border: 1px solid red;
+    color: black;
 }
 
 .porto-slide h6 {
@@ -428,13 +443,13 @@ button:hover {
 .porto-slide:hover {
     border: 2px solid transparent;
     transform: translate(0, 0);
-    background-color: #c7d453df;
+    background-color: #f4f80ca1;
     border-radius: 10px;
 }
 
 .porto-slide:hover h6 {
     transform: translateY(0px);
-    color: #000;
+    color: #000000;
     display: block;
 }
 
@@ -462,13 +477,13 @@ button:hover {
 
 .icon a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white-clr);
     transition: .5s all;
 }
 
 #about .icon:hover {
     color: black;
-    background-color: #e6ff00;
+    background-color: var(--main-clr);
 }
 
 #about .icon:hover a {
@@ -509,28 +524,13 @@ ul {
 /* scrollbar */
 
 ::-webkit-scrollbar {
-    width: 17px;
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 50%;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #e6ff00;
-    border-radius: 10px;
-    transition: .5s all;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: aqua;
+    width: 0px;
 }
 
 .iconarrow i {
     color: #000;
     display: none;
-    background-color: #c9df00;
+    background-color: var(--main-clr);
     border-radius: 50%;
     position: fixed;
     width: 40px;
@@ -574,7 +574,7 @@ ul {
     display: inline-block;
     position: relative;
     border: 3px solid;
-    border-color: #FFF rgb(255, 255, 255) transparent transparent;
+    border-color: white rgb(255, 255, 255) transparent transparent;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
 }
@@ -590,7 +590,7 @@ ul {
     bottom: 0;
     margin: auto;
     border: 3px solid;
-    border-color: transparent transparent #c9df00 #c9df00;
+    border-color: transparent transparent var(--main-clr) var(--main-clr);
     width: 40px;
     height: 40px;
     border-radius: 50%;
