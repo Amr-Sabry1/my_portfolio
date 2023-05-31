@@ -628,7 +628,6 @@ ul {
 }
 
 .certiImg {
-    width: 350px !important;
     border-radius: 10px;
     border-top: 4px solid var(--main-clr);
     border-bottom: 4px solid var(--main-clr);
