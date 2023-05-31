@@ -8,15 +8,17 @@ html {
 
 :root {
     --white-clr: rgb(255, 255, 255);
-    --main-clr: rgb(213, 255, 5);
+    --main-clr: rgb(171, 213, 1);
+    /* --main-clr: rgb(43, 144, 151); */
 }
 
 h2 {
     color: var(--white-clr) !important;
 }
 
-nav .container {
-    /* background-color: rgb(0, 0, 0) !important; */
+
+/* nav .container {
+    /* background-color: rgb(0, 0, 0) !important; 
     padding: 4px 20px;
     width: 75%;
     margin: auto;
@@ -25,7 +27,8 @@ nav .container {
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
     color: var(--main-clr);
-}
+} 
+*/
 
 body {
     overflow: hidden;
@@ -622,4 +625,161 @@ ul {
     100% {
         transform: rotate(-360deg);
     }
+}
+
+.certiImg {
+    width: 350px !important;
+    border-radius: 10px;
+    border-top: 4px solid var(--main-clr);
+    border-bottom: 4px solid var(--main-clr);
+}
+
+
+/* nav */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bodi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    translate: -50%;
+    bottom: 20px;
+    z-index: 200;
+    background: transparent;
+}
+
+.navigation {
+    width: 450px;
+    height: 60px;
+    background: #080808f0;
+    border: 2px solid white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.navigation ul {
+    display: flex;
+    width: 400px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 80px;
+    font-size: 1.3rem;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(255, 254, 254);
+}
+
+.navigation ul li.active a .icon {
+    transform: translateY(-25px);
+}
+
+.navigation ul li a .text {
+    position: absolute;
+    color: white;
+    font-weight: 800;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navigation ul li.active a .text {
+    transform: translateY(15px);
+    opacity: 1;
+}
+
+.indicator {
+    position: absolute;
+    top: -44%;
+    width: 50px;
+    height: 50px;
+    background: var(--main-clr);
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+
+/* .indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 var(--clr);
+}
+
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 var(--clr);
+} */
+
+.navigation ul li:nth-child(1).active~.indicator {
+    transform: translateX(calc(10px));
+}
+
+.navigation ul li:nth-child(2).active~.indicator {
+    transform: translateX(calc(80px * 1));
+}
+
+.navigation ul li:nth-child(3).active~.indicator {
+    transform: translateX(calc(75px * 2));
+}
+
+.navigation ul li:nth-child(4).active~.indicator {
+    transform: translateX(calc(73px * 3));
+}
+
+.navigation ul li:nth-child(5).active~.indicator {
+    transform: translateX(calc(72.5px * 4));
+}
+
+#work,
+#about {
+    background-color: #000000df;
 }
